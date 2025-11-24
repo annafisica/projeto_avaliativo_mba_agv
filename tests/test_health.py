@@ -7,7 +7,7 @@ def test_health_endpoint(client):
     
     data = response.json()
     assert data["status"] == "healthy"
-    assert "verson" in data
+    assert "version" in data
     assert "api_iniciada_em" in data
     assert "tempo_operacao_minutos" in data
     

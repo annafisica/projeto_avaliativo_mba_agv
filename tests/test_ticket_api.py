@@ -7,7 +7,7 @@ def test_ticket_valido_api(client):
     client_id = 1
     
     response = client.post(
-        f"/clients/{client_id}/calcular_tempo", 
+        f"/clientes/{client_id}/calcular_tempo", 
         json={"ticket": "TICKET_5"},
     )
     

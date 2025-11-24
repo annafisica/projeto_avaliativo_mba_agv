@@ -4,8 +4,8 @@ import uvicorn
 import datetime
 from typing import Dict, List
 
-from data.schemas import TicketInput
-from api.ticket_tempo import TicketAcesso
+from ..data.schemas import TicketInput
+from .ticket_tempo import TicketAcesso
 
 app = FastAPI()
 
