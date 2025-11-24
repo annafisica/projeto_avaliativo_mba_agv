@@ -4,8 +4,8 @@ import uvicorn
 import datetime
 from typing import Dict, List
 
-from data.schemas import TicketInput
-from api.ticket_tempo import TicketAcesso
+from ..data.schemas import TicketInput
+from .ticket_tempo import TicketAcesso
 
 app = FastAPI()
 
@@ -22,7 +22,7 @@ class Client(BaseModel):
 # Banco de dados simulado
 clientes_db = [
     {"id": 1, "nome": "Gisele", "tempo": 30},  # 30 minutos
-    {"id": 2, "nome": "Ana", "tempo": 45},     # 45 minutos  
+    {"id": 2, "nome": "Anna", "tempo": 45},     # 45 minutos  
     {"id": 3, "nome": "Vitor", "tempo": 20},   # 20 minutos
 ]
 
